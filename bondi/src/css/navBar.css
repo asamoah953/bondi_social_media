@@ -1,0 +1,44 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  font-family: 'Inter', sans-serif;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+.link {
+    border-radius: 10px;
+}
+
+
+.nav-item {
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: 0.25s ease;
+  border-radius: 10px;
+  display: flex;
+}
+
+.selected {
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: 0.25s ease;
+  border-radius: 10px;
+  display: flex;
+  background-color: #1631b7;
+  color: #ffffff;
+}
+
+.nav-item:hover {
+  background: #eef3ff;
+  color: #2a4dff;
+  transform: translateY(-1px);
+}
