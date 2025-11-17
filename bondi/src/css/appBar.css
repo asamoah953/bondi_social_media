@@ -6,8 +6,11 @@
   justify-content:space-between;
   padding: 0 1.5rem;            /* prevents content from touching edges */
   box-sizing: border-box;       /* prevents overlap from padding */
-  border-bottom: 1px solid rgb(206, 199, 199);
+  border-bottom: 1px solid rgb(236, 233, 233);
   background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 

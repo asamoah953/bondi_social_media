@@ -5,10 +5,14 @@
 }
 
 body {
-    background-color: rgb(222, 235, 241);
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
 }
 
 a {
     text-decoration: none;
     color: inherit;
 }
+
+/* rgb(222, 235, 241) */
