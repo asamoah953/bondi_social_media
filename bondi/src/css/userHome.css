@@ -2,19 +2,15 @@
     width: 55rem;
     height: 12rem;
     border: 1px solid #E0E0E0;
-    /* softer professional border */
     display: flex;
     padding: 1rem;
     flex-direction: column;
     gap: 4.3rem;
-    margin-top: 8rem;
+    margin-top: 6rem;
     margin-left: -3rem;
     background: #FFFFFF;
-    /* clean background */
     border-radius: 12px;
-    /* smooth corners */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    /* subtle professional shadow */
     box-sizing: border-box;
 }
 
@@ -85,6 +81,7 @@
 
 /* ICONS */
 .media-icons {
+
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -92,7 +89,6 @@
     font-size: 1.3rem;
     color: #4A4A4A;
     transition: 0.2s ease;
-
 
 }
 
@@ -113,3 +109,5 @@
 .post-btn:hover {
     background: #006FE6;
 }
+
+

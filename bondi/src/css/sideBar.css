@@ -3,13 +3,12 @@
     height: 110vh;
     display: flex;
     flex-direction: column;
-    /* justify-content:; */
     gap: .5rem;
     background-color: #FFFFFF;
     padding: 1rem;
     padding-top: 2.6rem;
     position: fixed;
-    margin-top: 41rem;
+    top: 5rem;
     left: 0;
 }
 

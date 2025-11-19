@@ -1,0 +1,26 @@
+.activeFriends-container {
+    width: 19rem;
+    height: 10rem;
+    border: 1px solid black;
+    position: fixed;
+    /* <-- stays in place on scroll */
+    right: 1rem;
+    top: 35.1rem;
+    /* stays at this exact spot */
+    border-radius: 1rem;
+    z-index: 999;
+    /* Visual improvements */
+    background: #ffffff;
+    /* clean white background */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    /* soft shadow */
+    border: 1px solid #e0e0e0;
+    /* light border for subtle separation */
+    padding: 1rem;
+    overflow-y: auto;
+    /* allows scrolling if content exceeds height */
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: #c0c0c0 transparent;
+    /* Firefox */
+}

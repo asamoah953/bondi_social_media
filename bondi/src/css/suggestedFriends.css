@@ -1,0 +1,101 @@
+.suggested-friends {
+  width: 19rem;
+  height: 15rem;
+  position: fixed;
+  right: 1rem;
+  top: 6.5rem;
+  border-radius: 1rem;
+  z-index: 999;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  /* Firefox */
+  scrollbar-color: #c0c0c0 transparent;
+}
+
+.suggestions-header {
+  width: 100%;
+  height: 2.3rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.suggestions {
+  position: fixed;
+  top: 10rem;          /* adjust based on your layout */
+  right: 1rem;         /* align with sidebar */
+  width: 18.8rem;        /* fixed width */
+  height: 11.3rem;
+  max-height: 14rem;   /* allows scroll if content overflows */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow-y: auto;    /* scroll when items exceed max-height */
+  z-index: 999;
+}
+
+/* Single suggested friend */
+.suggested-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  transition: background 0.2s;
+  width: 100%;          /* ensures it fits inside container */;
+  box-sizing: border-box;
+}
+
+.suggested-item:hover {
+  background-color: #f2f2f2;
+}
+
+/* Profile Image */
+.suggested-user-image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid #e0e0e0;
+}
+
+.suggested-user-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Name */
+.suggested-user-name {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+  flex-grow: 1;
+}
+
+/* Follow Button */
+.follow-btn {
+  background-color: #1da1f2; /* nice blue */
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.follow-btn:hover {
+  background-color: #0d8ddb;
+}

@@ -13,15 +13,6 @@ import UserHome from './pages/userHome';
 
 
 function App() {
-
-  // let userPostContainer = [
-  //   {
-  //     key:1
-  //   },
-  // ]
-
-
-
   return (
 
     <>
@@ -35,8 +26,11 @@ function App() {
         </Route>
 
         <Route element={<AppLayOut />}>
-        <Route path='/' element={ <UserHome />} />
+
+          <Route path='/' element={<UserHome />} />
+
         </Route>
+
       </Routes>
 
 
