@@ -14,12 +14,13 @@ function AppLayOut() {
 
     //items in the dashboard container
     const dashBoardData = [
-        { name: "Home", key: 1, icon: <TiHome /> },
-        { name: "Explore", key: 2, icon: <FaWpexplorer /> },
-        { name: "Messages", key: 3, icon: <RiMessage3Line /> },
-        { name: "Groups", key: 4, icon: <TbUsersGroup /> },
-        { name: "Saved", key: 5, icon: <MdSaveAlt /> },
-        { name: "Settings", key: 6, icon: <RiSettings3Line /> }
+        { name: "Home", key: 1, icon: <TiHome />, url:'/' },
+        { name: "Explore", key: 2, icon: <FaWpexplorer />, url:'/explore' },
+        { name: "profile", key: 3, icon: <FaWpexplorer />, url:'/user-profile' },
+        { name: "Messages", key: 4, icon: <RiMessage3Line />, url:'/messages' },
+        { name: "Groups", key: 5, icon: <TbUsersGroup />, url:'/groups' },
+        { name: "Saved", key: 6, icon: <MdSaveAlt />, url:'/' },
+        { name: "Settings", key: 7, icon: <RiSettings3Line />, url:'/settings' }
 
     ];
     return (

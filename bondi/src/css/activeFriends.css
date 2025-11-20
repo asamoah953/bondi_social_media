@@ -24,3 +24,34 @@
     scrollbar-color: #c0c0c0 transparent;
     /* Firefox */
 }
+
+
+.active-friends {
+    font-size: 1.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+}
+
+.friends {
+    height: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.4rem;
+    gap: 1rem;
+
+}
+
+.user-profile {
+  border-radius: 2.5rem;
+  border: 1px solid #e5e7eb;      /* soft gray border */
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);  /* soft shadow */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.user-profile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1); 
+}
+
