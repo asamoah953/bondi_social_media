@@ -1,0 +1,271 @@
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.user-info,
+.user-detail {
+    background: #ffffff;
+    /* clean white background */
+}
+
+/* keep your original layout sizes */
+.user-info {
+    width: 30rem;
+    height: 41rem;
+    margin-top: 5.1rem;
+    margin-left: 14.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.user-detail {
+    width: 48rem;
+    height: 41rem;
+    margin-top: 5.1rem;
+    box-shadow: 0 4px 12px rgba(45, 45, 45, 0.137);
+    /* soft card shadow */
+}
+
+.profile-container2 {
+    width: 10rem;
+    /* match the image width */
+    height: 10rem;
+    /* square for consistent layout */
+    border: 1px solid #e5e7eb;
+    /* soft border */
+    border-radius: 5rem;
+    /* smooth corners */
+    overflow: hidden;
+    /* makes image follow radius */
+    margin-top: 5rem;
+    margin-left: 10rem;
+    padding: 0;
+    /* remove padding so image fills container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.the-image {
+    width: 100%;
+    /* fills the container */
+    height: 100%;
+    object-fit: cover;
+    /* cover without distortion */
+    display: block;
+}
+
+
+.user-name {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.at-user {
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    font-weight: bold;
+}
+
+.at-user1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    font-weight: bold;
+}
+
+.activity-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    color: rgb(54, 54, 54);
+
+}
+
+.follows {
+    width: 6rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+    letter-spacing: .1rem;
+}
+
+
+.following {
+    width: 6rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+    letter-spacing: .1rem;
+}
+
+.about-container {
+    width: 100%;
+    min-height: 7rem;
+    /* flexible height if needed */
+    border-radius: 1rem;
+    /* smooth rounded corners */
+    background: #ffffff;
+    /* clean background */
+    padding: 1rem 1.5rem;
+    /* spacing inside */
+    display: flex;
+    align-items: center;
+    /* vertical center */
+    justify-content: flex-start;
+    /* keep content left-aligned */
+    gap: 1rem;
+    /* spacing between child elements */
+    box-shadow: 0 4px 12px rgba(127, 127, 127, 0.05);
+    /* subtle shadow */
+    transition: all 0.25s ease;
+    /* smooth hover/interaction effects */
+}
+
+
+
+
+.img-container {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #e5e7eb;
+    /* soft border */
+    border-radius: 50%;
+    /* perfect circle */
+    display: flex;
+    align-items: center;
+    /* vertically center content */
+    justify-content: center;
+    /* horizontally center content */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    margin-top: -3.5rem;
+    overflow: hidden;
+    /* ensures any image follows the radius */
+    background: #fff;
+    /* optional: background for empty state */
+}
+
+.the-image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.img-name {
+    height: 3rem;
+    margin-left: 1.5rem;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* nav container at the user profile */
+.nav-container {
+    width: 93%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 1rem;
+    gap: 3rem;
+    padding: 0.8rem 0;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    border: 1px solid rgb(230, 223, 223);
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.25s ease;
+}
+
+.nav-container a:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    transform: translateY(-2px);
+}
+
+
+.nav {
+    text-decoration: underline;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+/* search input */
+.search-bar3 {
+  width: 90%;
+  max-width: 39rem;
+  height: 3rem;
+  background-color: #DEEBF1;
+  border-radius: 8px;           
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.8rem;
+  box-sizing: border-box;
+  margin: 1rem 1rem;
+  border: 1px solid #cbd9df;       
+  background-color: white;
+}
+
+/* INPUT STYLE */
+.search-input3 {
+  flex: 1;
+  width: 40rem;
+  height: 70%;                     /* looks cleaner than 50% */
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: white;
+  padding-left: 0.3rem;            /* cleaner spacing */
+  border-radius: 4px;              /* slight soft corner inside */
+  font-weight: 500;
+}
+
+.media-icons3 {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    width: 6rem;
+    margin: 1rem 1rem;
+    font-size: 1.2rem;
+}
+
+.icons1 {
+    cursor: pointer;
+}
