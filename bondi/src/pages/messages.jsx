@@ -6,13 +6,16 @@ function Messages({ messages }) {
 
 
     const [selectedChat, setSelectedChat] = useState(null);
+    const [id, setId] = useState(null);
+    const [inputMessage, setInputMessage] = useState('')
+
 
     function handleClick(chatId) {
+        setId(chatId)
         const found = messages.find(info => info.id === chatId);
         setSelectedChat(found);
     }
 
-    console.log(selectedChat)
 
 
     return (
@@ -44,22 +47,56 @@ function Messages({ messages }) {
 
             <div className='chat-room'>
                 {selectedChat ? (
-                    <div className="chat-room-header">
-                        <div className="header-avatar">
-                            {selectedChat.name[0].toUpperCase()}
+                    <>
+                        <div className="chat-room-header">
+
+                            <div className="header-avatar">
+                                {selectedChat.name[0].toUpperCase()}
+                            </div>
+
+                            <div className="header-info">
+                                <div className="header-name">{selectedChat.name}</div>
+                                <div className="header-status">Active now</div>
+                            </div>
+
                         </div>
 
-                        <div className="header-info">
-                            <div className="header-name">{selectedChat.name}</div>
-                            <div className="header-status">Active now</div>
+                        <div className='received-message-container'>
+
+                            <div className='received-message'>
+                                {selectedChat.message}
+                            </div>
+                            <div className='sender-message'>
+                                {selectedChat.reply}
+
+                            </div>
+
                         </div>
-                    </div>
+                    </>
+
+
                 ) : (
                     <div className="empty-chat">
                         Select a chat to start messaging
                     </div>
                 )}
             </div>
+
+
+
+            <div className="chat-box">
+                <input
+                    type="text"
+                    placeholder="Type a message..."
+                    className="chat-input"
+                    value={inputMessage}
+                    onChange={(e) => setInputMessage(e.target.value)}
+                />
+                <button className="send-button">
+                    Send
+                </button>
+            </div>
+
 
         </div>
 

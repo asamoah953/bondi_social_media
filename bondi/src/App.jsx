@@ -15,66 +15,91 @@ const messages = [
     id: 1,
     name: 'Clinton',
     message: 'Hello',
+    reply: "Yeah how are you"
+
   },
   {
     id: 2,
-    name: 'Clinton',
-    message: 'Hello',
+    name: 'Asamoah',
+    message: 'Hello How are',
+    reply: "Yeah how are you"
   },
   {
     id: 3,
     name: 'Clinton',
     message: 'Hello',
+    reply: "Yeah how are you"
+
   },
   {
     id: 4,
     name: 'Clinton',
     message: 'Hello',
+    reply: "Yeah how are you"
+
   },
   {
     id: 5,
     name: 'Clinton',
     message: 'Hello',
+    reply: "Yeah how are you"
+
   },
   {
     id: 6,
     name: 'Clinton',
     message: 'Hello',
+    reply: "Yeah how are you"
+
   },
   {
     id: 7,
     name: 'Clinton',
     message: 'Hello',
+    reply: "Yeah how are you"
+
   },
   {
     id: 8,
     name: 'Clinton',
     message: 'Hello',
+    reply: "Yeah how are you"
+
   },
   {
     id: 9,
     name: 'Clinton',
     message: 'Hello',
+    reply: "Yeah how are you"
+
   },
   {
     id: 10,
     name: 'Clinton',
     message: 'Hello',
+    reply: "Yeah how are you"
+
   },
   {
     id: 11,
     name: 'Clinton',
     message: 'Hello',
+    reply: "Yeah how are you"
+
   },
   {
     id: 12,
     name: 'Clinton',
     message: 'Hello',
+    reply: "Yeah how are you"
+
   },
   {
     id: 13,
     name: 'Clinton',
     message: 'Hello',
+    reply: "Yeah how are you"
+
   },
 ]
 

@@ -5,9 +5,12 @@
     border: 1px solid #ddd;
     display: grid;
     grid-template-columns: .5fr 1fr;
-    background: #f5f5f5; /* soft background */
-    border-radius: 0.5rem; /* soft edges */
-    overflow: hidden; /* cleaner edges */
+    background: #f5f5f5;
+    /* soft background */
+    border-radius: 0.5rem;
+    /* soft edges */
+    overflow: hidden;
+    /* cleaner edges */
 }
 
 /* LEFT SIDE: chat list */
@@ -19,19 +22,10 @@
     box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.04);
     display: flex;
     flex-direction: column;
+    margin-top: 3.9rem;
 }
 
-/* RIGHT SIDE: chat room */
-.chat-room {
-    overflow-y: auto;
-    border-left: 1px solid #e0e0e0;
-    background: #fafafa;
-    padding: 1.2rem;
-    box-shadow: inset 2px 0 4px rgba(0, 0, 0, 0.04);
-    display: flex;
-    flex-direction: column;
-    margin-left: -37.4rem;
-}
+
 
 /* Optional scrollbar improvements */
 .messages-container::-webkit-scrollbar,
@@ -70,7 +64,7 @@
     align-items: center;
     gap: 1rem;
     padding: 0.8rem;
-    background:white;
+    background: white;
     border-radius: 0.6rem;
     cursor: pointer;
 
@@ -115,3 +109,166 @@
 }
 
 
+/* all about the chat room */
+
+.chat-room {
+    overflow-y: auto;
+    border-left: 1px solid #e0e0e0;
+    background: #fafafa;
+    box-shadow: inset 2px 0 4px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    margin-left: -37.4rem;
+    /* kept exactly as you set it */
+
+}
+
+/* Header inside chat room */
+.chat-room-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #ffffff;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+/* Circle avatar in chat room */
+.header-avatar {
+    width: 3rem;
+    height: 3rem;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.header-status {
+    font-size: 0.8rem;
+    color: #ddd;
+}
+
+.empty-chat {
+    text-align: center;
+    color: black;
+    margin-top: 20rem;
+    font-size: 1rem;
+}
+
+.received-message-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.received-message {
+    display: inline-block;
+    /* makes width fit content */
+    max-width: 25rem;
+    /* maximum width */
+    padding: 0.6rem 1rem;
+    /* inner spacing */
+    margin-bottom: 0.6rem;
+    /* spacing between messages */
+    border-radius: 0.6rem;
+    /* rounded corners */
+    background-color: #ffffff;
+    /* bubble color */
+    border: 1px solid #d1d1d1;
+    /* subtle border */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    /* soft depth */
+    word-wrap: break-word;
+    /* wrap long text */
+    margin-right: auto;
+
+}
+
+
+.sender-message {
+    display: inline-block;
+    /* width fits content */
+    max-width: 25rem;
+    /* max width */
+    padding: 0.6rem 1rem;
+    /* inner spacing */
+    margin-bottom: 0.6rem;
+    /* space between messages */
+    border-radius: 0.6rem;
+    /* rounded corners */
+    background-color: #007bff;
+    /* blue bubble */
+    color: white;
+    /* text color */
+    border: 1px solid #007bff;
+    /* subtle border matches bubble */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    word-wrap: break-word;
+    /* wrap long text */
+
+    /* Position right */
+    margin-left: auto;
+}
+
+
+
+/* Optional: add smooth transition for hover */
+.received-message:hover {
+    background-color: #f0f0f0;
+    transition: background 0.2s ease;
+}
+
+/* the message input box */
+.chat-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid #ddd;
+    background-color: #fafafa;
+    position: sticky;
+    bottom: 0;
+    width: 80%;
+    margin-left: 28rem;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.send-button {
+    padding: 0.6rem 1rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
