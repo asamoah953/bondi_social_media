@@ -17,7 +17,7 @@ function AppLayOut() {
         { name: "Home", key: 1, icon: <TiHome />, url:'/' },
         { name: "Explore", key: 2, icon: <FaWpexplorer />, url:'/explore' },
         { name: "profile", key: 3, icon: <FaWpexplorer />, url:'/user-profile' },
-        { name: "Messages", key: 4, icon: <RiMessage3Line />, url:'/messages' },
+        { name: "Messages", key: 4, icon: <RiMessage3Line />, url:'/user-messages' },
         { name: "Groups", key: 5, icon: <TbUsersGroup />, url:'/groups' },
         { name: "Saved", key: 6, icon: <MdSaveAlt />, url:'/' },
         { name: "Settings", key: 7, icon: <RiSettings3Line />, url:'/settings' }
