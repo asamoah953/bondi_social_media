@@ -10,7 +10,15 @@ import Messages from './pages/messages';
 
 
 
-const messages = [
+
+
+
+
+function App() {
+
+
+
+  const messages = [
   {
     id: 1,
     name: 'Clinton',
@@ -102,17 +110,13 @@ const messages = [
 
   },
 ]
-
-
-
-function App() {
   return (
 
     <>
       <Routes>
 
         <Route element={<AuthLayOut />}>
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='login' element={<LogIn />} />
 
@@ -120,7 +124,7 @@ function App() {
 
         <Route element={<AppLayOut />}>
 
-          <Route path='/' element={<UserHome />} />
+          <Route path='/user-homepage' element={<UserHome />} />
           <Route path='/user-profile' element={<UserProfile />} />
           <Route path='/user-messages' element={<Messages messages={messages} />} />
 

@@ -76,3 +76,15 @@
   background: #1f3fff;
   transform: translateY(-2px);
 }
+
+
+/* all about the bondi image */
+.bondi_image {
+  display: flex;
+  justify-content: center;
+}
+
+.bondi_login {
+  width: 10rem;
+  height: 10rem;
+}

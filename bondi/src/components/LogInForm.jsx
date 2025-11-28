@@ -1,39 +1,56 @@
 import { useEffect, useState } from "react";
 import "../css/signUp.css";
-import axios  from 'axios';
+import axios from 'axios';
+import BondiImage from "./bondiImage";
+import { useNavigate } from "react-router-dom";
+
+
 
 function LogInForm() {
-    //retrieving the input from the user
-    const [email, setEmail] = useState('');
-    const [password,setPassword] = useState('');
+  //retrieving the input from the user
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
 
-    //handling default submit
+  //handling default submit
   const handleSubmit = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
 
   };
 
-  
 
 
-  const LoginData = async()=>{
-    try {
-        let response = await axios.post('api/user/login/',{
-             email,
-             password
-         });
+  //this is the login in request to be used for the backend request
 
-         if(response.status = 200){
-            console.log(response.data)
-         }else {
-            throw new Error('could not send data')
-         }
-        
-    } catch (error) {
-        console.log(error)
-        
+  // const LoginData = async () => {
+  //   try {
+  //     let response = await axios.post('api/user/login/', {
+  //       email,
+  //       password
+  //     });
+
+  //     if (response.status = 200) {
+  //       console.log(response.data)
+  //     } else {
+  //       throw new Error('could not send data')
+  //     }
+
+  //   } catch (error) {
+  //     console.log(error)
+
+  //   }
+  // }
+
+  let nav = useNavigate();
+
+  function LoginData() {
+    if (password && email) {
+
+      nav('/user-homepage');
+
     }
+
+
   }
 
 
@@ -41,6 +58,9 @@ function LogInForm() {
 
   return (
     <div className="form-container">
+
+      <BondiImage />
+
       <h2 className="form-title">Sign in to Bondi</h2>
 
       <form className="business-form" onSubmit={handleSubmit}>
@@ -52,7 +72,7 @@ function LogInForm() {
             type="email"
             placeholder="Enter your email"
             value={email}
-            onChange={(e)=>setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
             required
             autoComplete="email"
           />
@@ -66,13 +86,13 @@ function LogInForm() {
             type="password"
             placeholder="Enter your password"
             value={password}
-            onChange={(e)=>setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
             required
             autoComplete="current-password"
           />
         </div>
 
-        <button type="submit" className="submit-btn" onClick={()=>LoginData()}>
+        <button type="submit" className="submit-btn" onClick={() => LoginData()}>
           Sign In
         </button>
       </form>
